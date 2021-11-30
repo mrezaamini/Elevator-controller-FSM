@@ -14,7 +14,8 @@ FSM of this elevator controller consists of three states: idle, moving, and rese
 <p align="center">
 <img src="https://github.com/mrezaamini/Elevator-controller-FSM/blob/main/assets/elevator.png" alt="4-level elevator" width="350" />
 </p>
-<br></br>
+
+
 - come[0..3]: 4-bit input, each floor has it's own button and this signal shows us which floor's button in the building is pushed.
 - cf[0..3]: 4-bit input, shows us pushed buttons inside the elevator.
 - switch[0..3]: 4-bit input, there is a switch in each floor that turns 1 whenever the elevator reaches to that specific floor.
@@ -24,10 +25,14 @@ FSM of this elevator controller consists of three states: idle, moving, and rese
 - move-state: 1-bit output, 1 when elevator is moving and 0 when it stops.
 
 ## TEST:
-for testing set a and b as input numbers in testbench and simulate it with softwares like modelsim. 
+The main test is with a simple testbench that initiates a clock (clk) and changes inputs over time.
+In Addition, there's another testbench in the "text file testbench" folder that contains testbench, supporting package, and input text file.
+Tests are done with modelSim simulator.
 Test Example:
 <br></br>
-![modelsim test example](https://github.com/mrezaamini/Serial-Adder/blob/main/test.png)
+<p align="center">
+<img src="https://github.com/mrezaamini/Elevator-controller-FSM/blob/main/assets/test.png" alt="test"/>
+</p>
 
 ## Support + Feedback
 
