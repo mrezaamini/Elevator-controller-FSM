@@ -4,7 +4,7 @@ In this project, I implemented a simple finite state machine of a 4-floor elevat
 ### DESCRIPTION
 
 FSM of this elevator controller consists of three states: idle, moving, and reset. The idle state is the state in which the elevator stops and evaluate the situation and check pending request (PendingReq) to decide what to do. In this implementation, I assume that the elevator's door closing and opening time are zero and we control it with an input signal called Switch. Moving state is for showing us that the elevator is moving and FSM goes into reset state whenever we want to reset the controller (elevator in floor one and nothing is happening. with no pending requests).
-<br></br>
+
 <p align="center">
 <img src="https://github.com/mrezaamini/Elevator-controller-FSM/blob/main/assets/elevator.png" alt="4-level elevator" width="350" />
 </p>
@@ -21,7 +21,6 @@ FSM of this elevator controller consists of three states: idle, moving, and rese
 The main test is with a simple testbench that initiates a clock (clk) and changes inputs over time.
 In Addition, there's another testbench in the "text file testbench" folder that contains testbench, supporting package, and input text file.
 Tests are done with modelSim simulator.
-<br></br>
 <p align="center">
 <img src="https://github.com/mrezaamini/Elevator-controller-FSM/blob/main/assets/test.png" alt="test"/>
 </p>
@@ -30,6 +29,7 @@ Tests are done with modelSim simulator.
 First, in the elevator package, I implemented this specific package for getting text files as input for testbench. Then in the testbench, we just initiate the clock and call this procedure.
 
 ```vhd
+
 PROCEDURE read_test_vector_from_file (
                     SIGNAL pr : IN  TIME; 
                     SIGNAL r : OUT std_logic;
@@ -112,3 +112,4 @@ PROCEDURE read_test_vector_from_file (
       FILE_CLOSE(fp);
     END read_test_vector_from_file;
     
+```
