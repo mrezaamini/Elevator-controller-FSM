@@ -36,12 +36,12 @@ Test Example:
 
 ## Support + Feedback
 
-Include information on how to get support. Consider adding:
+Include information on how to get support.
 - easily contact me with [email](aminiamini433@yahoo.fr)
 
 ## Thank You
 
-Information on the dependencies used, if desired.
+Thanks for paying attention, and hope this contest was usefull for you!
 
 ## License
 Link to [LICENSE](LICENSE) doc.
