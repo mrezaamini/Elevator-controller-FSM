@@ -5,9 +5,7 @@ In this project, I implemented a simple finite state machine of a 4-floor elevat
 
 FSM of this elevator controller consists of three states: idle, moving, and reset. The idle state is the state in which the elevator stops and evaluate the situation and check pending request (PendingReq) to decide what to do. In this implementation, I assume that the elevator's door closing and opening time are zero and we control it with an input signal called Switch. Moving state is for showing us that the elevator is moving and FSM goes into reset state whenever we want to reset the controller (elevator in floor one and nothing is happening. with no pending requests).
 
-<p align="center">
-<img src="/elevator.png" alt="4-level elevator" width="350" />
-</p>
+![elevator](/elevator.png)
 
 - come[0..3]: 4-bit input, each floor has it's own button and this signal shows us which floor's button in the building is pushed.
 - cf[0..3]: 4-bit input, shows us pushed buttons inside the elevator.
@@ -21,9 +19,8 @@ FSM of this elevator controller consists of three states: idle, moving, and rese
 The main test is with a simple testbench that initiates a clock (clk) and changes inputs over time.
 In Addition, there's another testbench in the "text file testbench" folder that contains testbench, supporting package, and input text file.
 Tests are done with modelSim simulator.
-<p align="center">
-<img src="/test.png" alt="test"/>
-</p>
+
+![test](/test.png)
 
 ### INPUT TEXT FILE TESTBENCH
 First, in the elevator package, I implemented this specific package for getting text files as input for testbench. Then in the testbench, we just initiate the clock and call this procedure.
