@@ -107,5 +107,4 @@ PROCEDURE read_test_vector_from_file (
        END LOOP;
       FILE_CLOSE(fp);
     END read_test_vector_from_file;
-    
 ```
