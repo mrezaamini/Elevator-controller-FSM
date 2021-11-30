@@ -26,8 +26,8 @@ FSM of this elevator controller consists of three states: idle, moving, and rese
 
 ## TEST:
 The main test is with a simple testbench that initiates a clock (clk) and changes inputs over time.
-In Addition, there's another testbench in the "text file testbench" folder that contains testbench, supporting package, and input text file.
-Tests are done with modelSim simulator.
+In Addition, there's another testbench in the "text file testbench" folder that contains testbench, supporting package, and input text file. (for further information about this testbench click [here](https://mrezaamini.github.io/Elevator-controller-FSM/). )
+Tests are done with modelSim simulator. 
 Test Example:
 <br></br>
 <p align="center">
