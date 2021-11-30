@@ -8,7 +8,7 @@ FSM of this elevator controller consists of three states: idle, moving, and rese
 
 <p align="center">
 <img src="https://github.com/mrezaamini/Elevator-controller-FSM/blob/main/assets/elevator.png" alt="4-level elevator" width="350" />
-
+</p>
 
 - come[0..3]: 4-bit input, each floor has it's own button and this signal shows us which floor's button in the building is pushed.
 - cf[0..3]: 4-bit input, shows us pushed buttons inside the elevator.
