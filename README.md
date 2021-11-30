@@ -10,11 +10,18 @@ In this project, I implemented a simple finite state machine of a 4-floor elevat
 
 ## Description:
 FSM of this elevator controller consists of three states: idle, moving, and reset. The idle state is the state in which the elevator stops and evaluate the situation and check pending request (PendingReq) to decide what to do. In this implementation, I assume that the elevator's door closing and opening time are zero and we control it with an input signal called Switch. Moving state is for showing us that the elevator is moving and FSM goes into reset state whenever we want to reset the controller (elevator in floor one and nothing is happening. with no pending requests).
-
-
+<br></br>
 <p align="center">
-<img src="https://github.com/mrezaamini/Elevator-controller-FSM/blob/main/assets/elevator.png" alt="4-level elevator" width="500" />
+<img src="https://github.com/mrezaamini/Elevator-controller-FSM/blob/main/assets/elevator.png" alt="4-level elevator" width="350" />
 </p>
+<br></br>
+- come[0..3]: 4-bit input, each floor has it's own button and this signal shows us which floor's button in the building is pushed.
+- cf[0..3]: 4-bit input, shows us pushed buttons inside the elevator.
+- switch[0..3]: 4-bit input, there is a switch in each floor that turns 1 whenever the elevator reaches to that specific floor.
+- motor-up: 1-bit output, 1 when elevator is moving up.
+- motor-down: 1-bit output, 1 when elevator is moving down.
+- current-floor: in this implementation is 4-bit output that shows which floor is elevator in (for showing it inside the cabin).
+- move-state: 1-bit output, 1 when elevator is moving and 0 when it stops.
 
 ## TEST:
 for testing set a and b as input numbers in testbench and simulate it with softwares like modelsim. 
